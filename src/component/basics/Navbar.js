@@ -7,7 +7,7 @@ const Navbar = ({ filterItem, menuList }) => {
         <div className="btn-group">
           {menuList.map((curElem) => {
             return (
-              <button
+              <button key={curElem}
                 className="btn-group__item"
                 onClick={() => filterItem(curElem)}>
                 {curElem}
